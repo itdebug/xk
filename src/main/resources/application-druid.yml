@@ -1,11 +1,11 @@
 server:
-  port: 8081
+  port: 8082
   servlet:
     context-path: /xk
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/zevencourse?serverTimezone=Asia/Shanghai&useunicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/xk?serverTimezone=Asia/Shanghai&useunicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123
     type: com.alibaba.druid.pool.DruidDataSource
