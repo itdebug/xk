@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "course_student",
-    schema = "zevencourse",
+    schema = "xk",
     catalog = "")
 @IdClass(CourseStudentPK.class)
 public class CourseStudent {
