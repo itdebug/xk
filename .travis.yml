@@ -4,4 +4,4 @@ install: mvn install -DskipTests=true -Dmaven.javadoc.skip=true
 before_install:
 - chmod +x ./mvnw
 script:
--"./mvnw test -B"
+- "./mvnw test -B"
