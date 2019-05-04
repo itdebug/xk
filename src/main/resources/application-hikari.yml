@@ -17,7 +17,7 @@ spring:
       validation-timeout: 3000
       login-timeout: 5
   jpa:
-#    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
     properties:
       hibernate:
         current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
