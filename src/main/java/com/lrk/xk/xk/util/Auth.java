@@ -3,6 +3,7 @@ package com.lrk.xk.xk.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.impl.crypto.MacProvider;
 
 import java.security.Key;
@@ -24,8 +25,8 @@ public class Auth {
         claims.put("id", 1);
         claims.put("name", "zeven");
         claims.put("role", "admin");
-        String s = "";
-        //        String s = Jwts.builder().setClaims(claims).signWith(SignatureAlgorithm.HS512, key).compact();
+        String s =
+            Jwts.builder().setClaims(claims).signWith(SignatureAlgorithm.HS512, key).compact();
         System.out.println(s);
         Claims result;
         result = Jwts.parser().setSigningKey(key).parseClaimsJws(s).getBody();
