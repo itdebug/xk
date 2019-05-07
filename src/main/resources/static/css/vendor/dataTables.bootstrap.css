@@ -64,11 +64,13 @@ table.dataTable thead .sorting_desc:after {
 }
 
 table.dataTable thead .sorting:after {
-    content: "\f0dc";
+    /*此处不需要排序按钮*/
+    /*content: "\f0dc";*/
 }
 
 table.dataTable thead .sorting_asc:after {
-    content: "\f0de";
+    /*此处不需要排序按钮*/
+    /*content: "\f0de";*/
 }
 
 table.dataTable thead .sorting_desc:after {
