@@ -35,7 +35,9 @@ public class DaoSupportImpl<T> implements DaoSupport<T> {
     private static Class getSuperClassGenricType(final Class clazz, final int index) {
         Type genType = clazz.getGenericSuperclass();
         if (!(genType instanceof ParameterizedType)) {
+
             return Object.class;
+
         }
         Type[] params = ((ParameterizedType) genType).getActualTypeArguments();
         if (index >= params.length || index < 0) {
